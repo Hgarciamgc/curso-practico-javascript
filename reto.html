@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>triangulo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        :root{
+            --AzulOscuro: #001f35;
+            --AzulOscuroLight: #003a58;
+            --AzulMedio: #005f82;
+            --Azul: #008eb0;
+            --AzulClaro: #00c7de;
+        }
+
+        .Padre{
+            width: 100%;
+            height: 30vh;
+            display: grid;
+            place-items: center;
+        }
+        .hijo{
+            width: 60%;
+            height: 50vh;
+            background-color: #001f35;
+            display: grid;
+            place-items: center;
+            border-radius: 0 0 8px 8px;
+
+            
+        }
+        .titulo{
+            font-size: 28px;
+            color: var(--AzulClaro);
+            margin-bottom: -50px;
+        }
+        div{
+            color: var(--AzulClaro);
+            font-size: 20px;
+        }
+        .buttom{
+            height: 6vh;
+            width:  16vh;
+            border-radius: 8px;
+            cursor: pointer;
+            border: #00c7de solid 2px;
+            background-color: var(--Azul);
+            color: white;
+        }
+        .input{
+            height: 3vh;
+            border-radius: 12px;
+            border: black solid 2px;
+        }
+       
+    </style>
+</head>
+<body>
+    <section class="Padre">
+
+        <section class="hijo">
+
+            <header class="titulo">
+                <h1> Calcular la altura del triangulo</h1>
+            </header>
+
+            <div>
+                <label for="Lado1, Lado2, Base" class="Label1">
+                    Escribe los dos lados del triangulo y la base 
+                </label>
+            </div>
+    
+            <section>
+                <input type="number" id="Lado1" placeholder="Lado" class="input">
+                <input type="number" id="Lado2" placeholder="Lado" class="input"> 
+                <input type="number" id="Base" placeholder="Base" class="input">
+            </section>  
+
+            <button type="button" onclick="calcular()" class="buttom">
+                Calcular altura
+            </button>
+
+            </section>
+
+    </section>
+
+    <script src="reto.js"></script>
+</body>
+</html>
